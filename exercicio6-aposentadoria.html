@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aposentadoria</title>
+</head>
+<body>
+    Digite sua idade: <input id="idade" autofocus> <br>
+    <button onclick="calcular()">Calcular</button>
+</body>
+</html>
+<script>
+    function calcular() {
+        var tempo_homem = 60 - idade.value;
+        var tempo_mulher = 50 - idade.value;
+        alert (`Se for homem faltam ${tempo_homem} anos para aposentar`);
+        alert (`Se for mulher faltam ${tempo_mulher} anos para aposentar`);
+
+    }
+</script>

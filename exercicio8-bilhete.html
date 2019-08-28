@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bilhete Único</title>
+</head>
+<body>
+    Digite o valor da passagem: <input id="val_passagem" autofocus> <br>
+    Digite a quantidade de viagens que irá realizar: <input id="qtd_viag"> <br>
+    <button onclick="calcular()">Ver economia</button>
+</body>
+</html>
+<script>
+    function calcular() {
+        var meia = val_passagem.value / 2;
+        var economia = meia * qtd_viag.value;
+        alert (`Você economizará ${economia.toFixed(2)} por mês`);
+    }
+</script>

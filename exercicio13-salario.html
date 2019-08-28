@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Salário</title>
+</head>
+<body>
+    Valor de salário bruto: <input id="sal_bru" autofocus> <br>
+    <button onclick="calcular()">Clique para saber seu salário</button>
+</body>
+</html>
+<script>
+    function calcular(){
+        var desc1 = sal_bru.value * 0.10;
+        var desc2 = sal_bru.value * 0.20;
+        var desc3 = sal_bru.value / 30;
+        var sal_liq = sal_bru.value - desc1 - desc2 - desc3;
+        alert (`Apesar de seu salário bruto ser R$${sal_bru.value}, após os descontos, você receberá somente R$${sal_liq}`)
+    }
+</script>

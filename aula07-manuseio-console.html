@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>HTML com Javascript</h2>
+    Informe seu nome: <input id="seu_nome"> <br>
+    Informe sua idade: <input id="idade"> <br>
+    <button onclick="contar()">Conte-me algo</button>
+</body>
+</html>
+<script>
+// Aqui criamos um algoritmo chamado "contar"
+//ou seja, criamos uma Função chamada "contar"
+// A função contar vai pegar o 'seu_nome' e 'idade'
+//e exibir eles numa mesma frase
+function contar(){
+    //Aqui criamos duas variáveis
+    var seu_nome1 = seu_nome.value;
+    var idade1 = idade.value;
+    //A primeira variável é "seu_nome1"
+    //A segunda variável é "idade1"
+    alert ('Olá, o programa está começando!'); //Texto totalmente estático
+    //Técnica da Interpolação
+    alert (`Você se chama ${seu_nome1} e tem ${idade1} anos`)
+    //Técnica da Concatenação
+    alert (`Você se chama `seu_nome1+` e tem `idade1+` anos (2ª vez)`)
+}
+</script>

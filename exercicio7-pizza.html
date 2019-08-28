@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vaquinha da Pizza</title>
+</head>
+<body>
+    Digite o valor da pizza: <input id="val_pizza" autofocus> <br>
+    Digite a quantidade de amigos que irão dividir: <input id="qtd_amg"> <br>
+    <button onclick="calcular()">#lovePizza</button>
+</body>
+</html>
+<script>
+    function calcular() {
+        var pagamento = val_pizza.value / qtd_amg.value;
+        alert (`Cada um dos ${qtd_amg.value} vai pagar RS${pagamento.toFixed(2)}`);
+    }
+</script>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Localização do Usuário</title>
+</head>
+<body>
+    Digite seu endereço: <input id="endereco" autofocus> <br>
+    Digite o número de sua residência <input id="numero"> <br>
+    <button onclick="localizacao()">Onde eu moro</button>
+</body>
+</html>
+<script>
+    function localizacao(){
+    var endereco1 = endereco.value;
+    var numero1 = numero.value;
+    alert (`Seu logradouro é ${endereco1}`);
+    alert (`O número de seu logradouro é ${numero1}`);
+    } 
+</script>

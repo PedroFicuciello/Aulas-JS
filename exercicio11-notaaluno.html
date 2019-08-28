@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nota do Aluno</title>
+</head>
+<body>
+    Digite a nota da avaliação continuada: <input id="av_cont"> <br>
+    Digite a nota da avaliação semestral: <input id="av_sem"> <br>
+    Digite o nome do aluno: <input id="nome"> <br>
+    <button onclick="calcular()">Calcular</button>
+</body>
+</html>
+<script>
+    function calcular() {
+        var cont = av_cont.value * 0.4;
+        var sem = av_sem.value * 0.6;
+        var med = cont + sem;
+        var nome1 = nome.value
+        alert (`A média de ${nome1} será de ${med}`);
+    }
+</script>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Times e Mundiais</title>
+</head>
+<body>
+    Digite qual time você torce: <input id="time" autofocus> <br>
+    Digite quantos mundiais possui: <input id="mundiais"> <br>
+    <button onclick="titulos()">Amo meu time</button>
+</body>
+</html>
+<script>
+    function titulos(){
+    var time1 = time.value;
+    var mundiais1 = mundiais.value;
+    alert (`O time ${time1} tem ${mundiais1} mundiais da FIFA `);
+    }
+</script>

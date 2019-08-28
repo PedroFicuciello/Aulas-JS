@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Análise PET</title>
+</head>
+<body>
+    Informe seu bairro: <input id="bairro" autofocus> <br>
+    Informe o número de cachorros: <input id="cachorros"> <br>
+    <button onclick="exibir()">Análise Pet</button>
+    <div id="div_mensagem" style="color:red"></div>
+</body>
+</html>
+<script>
+    function exibir() {
+    div_mensagem.innerHTML = `Você mora em ${bairro.value} e tem ${cachorros.value} cachorros`;
+    }
+    </script>

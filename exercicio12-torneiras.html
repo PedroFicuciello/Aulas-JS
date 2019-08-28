@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Desperdício</title>
+</head>
+<body>
+    <h2>FAZERRRRRRRR</h2>
+    Quantos minutos a torneira 1 ficou pingando: <input id="torn1" autofocus>
+    Quantos minutos a torneira 2 ficou pingando: <input id="torn2">
+    Quantos minutos a torneira 3 ficou pingando: <input id="torn3">
+    <button onclick="calcular()">Calcular</button>
+</body>
+</html>
+<script>
+    function calcular(){
+        var torneira1 = torn1.value * 15;
+        var torneira2 = torn2.value * 15;
+        var torneira3 = torn3.value * 15;
+        var total = torneira1 + torneira2 + torneira3;
+        alert (`Suas 3 torneiras, juntas, desperdiçaram ${total} litros de água`)
+    }
+</script>

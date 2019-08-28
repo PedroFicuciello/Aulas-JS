@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrecadação</title>
+</head>
+<body>
+    Quantidade ingressos de estudante vendidos: <input id="qtd_estud" autofocus> <br>
+    Quantidade ingressos comuns vendidos: <input id="qtd_com"> <br>
+    Digite o valor do ingresso comum: <input id="val_ing"> <br>
+    <button onclick="calcular()">Calcular</button>
+</body>
+</html>
+<script>
+    function calcular(){
+        var com = qtd_com.value * val_ing.value;
+        var estud = (qtd_estud.value * val_ing.value) / 2;
+        var arrecadacao = com + estud;
+        alert (`A arrecadação foi de RS${arrecadacao.toFixed(2)}`);
+    }
+</script>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Economias</title>
+</head>
+<body>
+    Moedas do Huguinho: <input id="hug" autofocus> <br>
+    Moedas do Zezinho <input id="zez"> <br>
+    Moedas do Luizinho: <input id="luiz"> <br>
+    <button onclick="calcular()">Calcular economias</button>
+</body>
+</html>
+<script>
+    function calcular(){
+        var econ_hug = hug.value * 0.5;
+        var econ_zez = zez.value * 0.5;
+        var econ_luiz = luiz.value * 0.5;
+        var dep_hug = hug.value;
+        var dep_zez = zez.value;
+        var dep_luiz = luiz.value;
+        alert (`O Huguinho economizou R$${econ_hug} pois fez ${dep_hug} depósitos`);
+        alert (`O Zezinho economizou R$${econ_zez} pois fez ${dep_zez} depósitos`);
+        alert (`O Luizinho economizou R$${econ_luiz} pois fez ${dep_luiz} depósitos`);
+    }
+</script>

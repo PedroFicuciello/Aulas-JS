@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perdendo Peso</title>
+</head>
+<body>
+    Quantos pães franceses consumiu: <input id="pao" autofocus> <br>
+    Quantas casquinhas consumiu: <input id="casq"> <br>
+    Quantos minutos de caminhada: <input id="camin"> <br>
+    Quantos minuto de musculação: <input id="musc"> <br>
+    <button onclick="calcular()">Calcule seu peso</button>
+</body>
+</html>
+<script>
+    function calcular(){
+        var pao1 = pao.value * 100;
+        var casq1 = casq.value * 300;
+        var camin1 = camin.value * 50 ;
+        var musc1 = musc.value * 30;
+        var ganhos = pao1 + casq1;
+        var perdas = camin1 + musc1;
+        var total = ganhos - perdas; 
+        alert (`Entre calorias que ganhou e perdeu, seu saldo de calorias no dia é de ${total}`)
+    }
+
+
+</script>

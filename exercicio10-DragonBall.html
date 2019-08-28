@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dragon Ball</title>
+</head>
+<body>
+    Nome do guerreiro: <input id="nome_guerreiro"> <br>
+    Ki normal do guerreiro <input id="ki_guerreiro"> <br>
+    <button onclick="calcular()">Ver ki em cada forma</button>
+</body>
+</html>
+<script>
+    function calcular(){
+        var ki_sayajin = ki_guerreiro.value * 50;
+        var ki_super = ki_guerreiro.value * 100;
+        alert (`O ${nome_guerreiro.value} tem ${ki_sayajin} em forma de Super Sayajin`);
+        alert (`O ${nome_guerreiro.value} tem ${ki_super} em forma de Super Sayajin 2`);
+    }
+</script>
